@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!--Navbar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-heart text-info" aria-hidden="true"></i>
+            六角血拼賣賣
+        </a>
+        <div class="dropdown ml-auto">
+            <button class="btn btn-cart btn-sm" id="dropdownMenu2" data-toggle="dropdown" data-flip="true" aria-hidden="true">
+                <i class="fas fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                <span class="badge badge-pill badge-danger" style="position: absolute;">12</span>
+            </button>
+            
+                <div class="dropdown-menu dropdown-menu-right" style="min-width: 350px;">
+                    <div class="px-4 py-3">
+                        <p>已選擇商品</p>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <button type="button" class="btn btn-sm" data-toggle="modal" data-title="確認刪除 金牌西裝" data-target="#deleteModal">
+                                            <i class="fa fa-trash-alt fa-1x"></i>
+                                        </button>
+                                    </th>
+                                    <td class="pt-3">金牌西裝</td>
+                                    <td class="pt-3">1件</td>
+                                    <td class="pt-3">＄580</td>
+                                </tr>
+                                <tr>
+                                    <th><button type="button" class="btn btn-sm" data-toggle="modal" data-title="確認刪除 金牌西裝" data-target="#deleteModal"><i class="fa fa-trash-alt fa-1x" aria-hidden="true"></i></button></th>
+                                    <td class="pt-3">金牌女裝</td>
+                                    <td class="pt-3">1件</td>
+                                    <td class="pt-3">＄420</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="btn btn-primary btn-block">結帳去</a>
+                    </div>
+                </div>
+            
+        </div>
+    </nav>
+
+    <!--Jumbotron-->
+
+    <div class="jumbotron jumbotron-fluid jumbotron-bg d-flex align-items-center">
+        <div class="container bg-lighter mt-5 py-2">
+            <h1 class="display-3 font-weight-bold">買到賺到！最後出清</h1>
+            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </div>
+    </div>
+
+    <!--Content-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-5">
+                <div class="list-group sticky-top">
+                    <a href="#pane-1" class="list-group-item list-group-item-action active" data-toggle="list" role="tab">
+                        <i class="fas fa-suitcase mr-2"></i>金牌專賣店
+                    </a>
+                    <a href="#pane-2" class="list-group-item list-group-item-action" data-toggle="list" role="tab"><i class="fas fa-gift mr-2"></i>禮品區</a>
+                    <a href="#pane-3" class="list-group-item list-group-item-action" data-toggle="list" role="tab"><i class="fas fa-film mr-2"></i>影音商品</a>
+                    <a href="#pane-4" class="list-group-item list-group-item-action" data-toggle="list" role="tab"><i class="fas fa-paw mr-2"></i>寵物專用</a>
+                    <a href="#pane-5" class="list-group-item list-group-item-action" data-toggle="list" role="tab" tabindex="-1" aria-disabled="true"><i class="fas fa-tree mr-2"></i>居家環境</a>
+                </div>
+            </div>
+
+
+            <div class="col-md-9">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="pane-1">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1494281258937-45f28753affd?w=1350" class="card-img-top"
+                                        alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content.</p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <div class="btn-group btn-group-sm" style="width: 150px" role="group" aria-label="Basic example">
+                                            <button type="button" class="btn btn-outline-secondary">SM</button>
+                                            <button type="button" class="btn btn-outline-secondary">S</button>
+                                            <button type="button" class="btn btn-outline-secondary disabled">M</button>
+                                            <button type="button" class="btn btn-outline-secondary">L</button>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1481399124169-87493351c8a1?w=1349" class="card-img-top"
+                                        alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content.</p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <div class="btn-group btn-group-sm" style="width: 150px" role="group" aria-label="Basic example">
+                                            <button type="button" class="btn btn-outline-secondary">SM</button>
+                                            <button type="button" class="btn btn-outline-secondary">S</button>
+                                            <button type="button" class="btn btn-outline-secondary">M</button>
+                                            <button type="button" class="btn btn-outline-secondary">L</button>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1486250944723-86bca2b15b06?w=1351" class="card-img-top"
+                                        alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content.</p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <div class="btn-group btn-group-sm" style="width: 150px" role="group" aria-label="Basic example">
+                                            <button type="button" class="btn btn-outline-secondary">SM</button>
+                                            <button type="button" class="btn btn-outline-secondary">S</button>
+                                            <button type="button" class="btn btn-outline-secondary">M</button>
+                                            <button type="button" class="btn btn-outline-secondary">L</button>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1497339100210-9e87df79c218?w=1350" class="card-img-top"
+                                        alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content.</p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <a class="btn btn-outline-secondary btn-sm w-100" href="#">搶購去</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1485373650022-3ed53f62b8f3?w=634" class="card-img-top"
+                                        alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">變聲領帶</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <a class="btn btn-outline-secondary btn-sm w-100 disabled" href="#">缺貨中</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="pane-2">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2193&q=80" class="card-img-top"
+                                        alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content.
+                                            This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <a class="btn btn-outline-secondary btn-sm w-100" href="#">兌換去</a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1509762774605-f07235a08f1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top"
+                                        alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content.</p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <a class="btn btn-outline-secondary btn-sm w-100" href="#">兌換完畢</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1502767089025-6572583495f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top"
+                                        alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content.</p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <a class="btn btn-outline-secondary btn-sm w-100" href="#">兌換去</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top"
+                                        alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content.</p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <a class="btn btn-outline-secondary btn-sm w-100" href="#">兌換去</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top"
+                                        alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <a class="btn btn-outline-secondary btn-sm w-100 disabled" href="#">兌換完畢</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="pane-3">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1487215078519-e21cc028cb29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                        class="card-img-top" alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.
+                                            This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <a class="btn btn-outline-secondary btn-sm w-100" href="#">了解更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1467196271131-42c8c8499d72?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                        class="card-img-top" alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.</p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <a class="btn btn-outline-secondary btn-sm w-100" href="#">了解更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+                                        class="card-img-top" alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.</p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <a class="btn btn-outline-secondary btn-sm w-100" href="#">了解更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1416339306562-f3d12fefd36f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                        class="card-img-top" alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.</p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <a class="btn btn-outline-secondary btn-sm w-100" href="#">了解更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1525431301226-f824535d4953?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                        class="card-img-top" alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <a class="btn btn-outline-secondary btn-sm w-100" href="#">了解更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="pane-4">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1476301318723-24e9c0d7cca2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                        class="card-img-top" alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.
+                                            This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <a class="btn btn-outline-secondary btn-sm w-100" href="#">了解更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1492235276442-80d2360d7faa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                        class="card-img-top" alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.</p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <a class="btn btn-outline-secondary btn-sm w-100" href="#">了解更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1532202802379-df93d543bac3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                        class="card-img-top" alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.
+                                            This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <a class="btn btn-outline-secondary btn-sm w-100" href="#">了解更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1508077520137-4c18ff1adb68?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                        class="card-img-top" alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.</p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <a class="btn btn-outline-secondary btn-sm w-100" href="#">了解更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1547919307-baa8f6d13218?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                                        class="card-img-top" alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <a class="btn btn-outline-secondary btn-sm w-100" href="#">了解更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="pane-5">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                        class="card-img-top" alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.
+                                            This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <a class="btn btn-outline-secondary btn-sm w-100" href="#">了解更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                        class="card-img-top" alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.</p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <a class="btn btn-outline-secondary btn-sm w-100" href="#">了解更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                        class="card-img-top" alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.
+                                            This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <a class="btn btn-outline-secondary btn-sm w-100" href="#">了解更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1519643381401-22c77e60520e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                        class="card-img-top" alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.</p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <a class="btn btn-outline-secondary btn-sm w-100" href="#">了解更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow text-center border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                        class="card-img-top" alt="商品照片">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                            additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <a class="btn btn-outline-secondary btn-sm w-100" href="#">了解更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="d-flex justify-content-center" aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>    
+    </div>
+
+    <hr>
+
+    <!--單件細節-->
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-transparent pl-0">
+                <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                <li class="breadcrumb-item"><a href="#">金牌專賣店</a></li>
+                <li class="breadcrumb-item active" aria-current="page">金牌西裝</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="sticky-top" style="top:10px;">
+                    <h1 class="h2">金牌西裝</h1>
+                    <div class="d-flex justify-content-end align-items-end">
+                        <span class="text-muted">售價$1,299</span>
+                        <div class="h3 ml-auto mb-0 text-danger">
+                            <small>特價</small>
+                            <strong>$599</strong>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex align-items-center">
+                        <div>
+                            尺寸：
+                        </div>
+                        <div class="btn-group btn-group-sm btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-outline-secondary active">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked> SM
+                            </label>
+                            <label class="btn btn-outline-secondary disabled">
+                                <input type="radio" name="options" id="option2" autocomplete="off"> M
+                            </label>
+                            <label class="btn btn-outline-secondary">
+                                <input type="radio" name="options" id="option3" autocomplete="off"> L
+                            </label>
+                            <label class="btn btn-outline-secondary">
+                                <input type="radio" name="options" id="option4" autocomplete="off"> XL
+                            </label>
+                        </div>
+                    </div>
+                    <div class="input-group my-3">
+                        <select class="custom-select border-primary rounded mr-2" id="inputGroupSelect02">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <div>
+                            <button class="btn btn-primary" type="button">加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div>
+                    <h2>帥氣的西裝無人能敵</h2>
+                    <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little
+                    bit longer.</p>
+                </div>
+                <div class="pt-5">
+                    <h3 class="text-center">合身剪裁</h3>
+                    <img class="w-100 pb-5" src="https://images.unsplash.com/photo-1472417583565-62e7bdeda490?w=634" alt="">
+                    <h3 class="text-center">合身剪裁</h3>
+                    <img class="w-100 pb-5" src="https://images.unsplash.com/photo-1497339100210-9e87df79c218?w=1500" alt="">
+                    <h3 class="text-center">合身剪裁</h3>
+                    <img class="w-100 pb-5" src="https://images.unsplash.com/photo-1475530060488-75a6de1dca6f?w=675" alt="">
+
+                    <div class="bg-description mb-4" style="padding: 0.75rem 1.25rem;color: #464a4e;">
+                        <h2 class="text-center">購物說明</h2>
+                        <p class="lead" style="font-size: 16px;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, at! Totam, exercitationem repellat. Saepe facere amet
+                            expedita perferendis voluptatem dicta dignissimos tempora ut atque, rerum doloribus? Magni, blanditiis. Assumenda,
+                            distinctio!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!--pay-page-->
+
+    <div class="container">
+        <h1 class="text-secondary text-center pt-5 pb-4">六角血拼 結帳</h1>
+        <div class="form-row text-center">
+            <div class="col-12 col-md">
+                <div class="alert alert-success alert-rounded" role="alert">
+                    1.輸入訂單資料
+                </div>
+            </div>
+            <div class="col-12 col-md">
+                <div class="alert alert-light alert-rounded" role="alert">
+                    2.金流付款
+                </div>
+            </div>
+            <div class="col-12 col-md">
+                <div class="alert alert-light alert-rounded" role="alert">
+                    3.完成
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="accordion" id="accordionExample">
+                    <div class="card mb-5">
+                        <div class="card-header mb-0" id="headingOne">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                顯示購物車細節
+                            </button>
+                        </div>
+                
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="px-4 py-3 border-bottom">
+                                <p>已選擇商品</p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center" scope="col" colspan="2">商品名稱</th>
+                                            <th class="text-right" scope="col">數量</th>
+                                            <th class="text-right" scope="col">小計</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row" style="vertical-align: middle">
+                                                <a class="btn btn-sm" data-toggle="modal" data-target="#deleteModal" data-title="確認刪除 金牌西裝">
+                                                     <i class="fa fa-trash-alt fa-1x"></i>
+                                                </a>
+                                            </th>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="https://images.unsplash.com/photo-1494281258937-45f28753affd?w=1350" class="mr-3" alt="..." width="80">
+                                                    <div class="">
+                                                        金牌西裝
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-right" style="vertical-align: middle">1件</td>
+                                            <td class="text-right" style="vertical-align: middle">＄580</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right" colspan="3">運費</td>
+                                            <td class="text-right font-weight-bold" colspan="1">＄60</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right" colspan="3">合計</td>
+                                            <td class="text-right font-weight-bold" colspan="">＄640</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="bg-light py-3 text-center" >
+                    <h5 class="mb-0">訂購人資訊</h5>
+                </div>
+                <form class="mt-4 needs-validation" novalidate>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">姓名</label>
+                            <input type="text" class="form-control" id="inputEmail4" placeholder="姓名" required>
+                            <div class="invalid-feedback">
+                                Please check again.
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">E-mail</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Email" required>
+                            <div class="invalid-feedback">
+                                Please check again.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputState1">國家</label>
+                            <select id="inputState1" class="form-control">
+                                <option selected>台灣</option>
+                                <option value="korea">韓國</option>
+                                <option value="japan">日本</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState2">城市</label>
+                            <select id="inputState2" class="form-control">
+                                <option value="taipei" selected>台北市</option>
+                                <option value="yy">...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputAddress">郵遞區號</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Please check again.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputAddress2">地址</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Address" required>
+                        <div class="invalid-feedback">
+                            Please check again.
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end pb-5">
+                        <a href="#" class="btn btn-secondary mr-2">繼續選購</a>
+                        <button type="submit" class="btn btn-primary">確認付款</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h1 class="text-black-50 text-center pt-5 pb-3">六角血拼 結帳完成</h1>
+                <div class="form-row text-center justify-content-center">
+                    <div class="col-12">
+                        <div class="alert alert-success alert-rounded" role="alert">
+                            完成
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="text-center mb-0 py-3">購買資訊</h4>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="text-left" scope="col" colspan="2">商品名稱</th>
+                            <th class="text-right" scope="col">數量</th>
+                            <th class="text-right" scope="col">小計</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" style="vertical-align: middle">
+                                <a class="btn btn-sm bg-transparent" data-toggle="modal" data-target="#deleteModal" data-title="確認刪除 金牌西裝" data-backdrop="static">
+                                    <i class="fa fa-trash-alt fa-1x"></i>
+                                </a>
+                            </th>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="https://images.unsplash.com/photo-1494281258937-45f28753affd?w=1350" class="mr-3"
+                                        alt="..." width="80">
+                                    <div class="">
+                                        金牌西裝
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-right" style="vertical-align: middle">1件</td>
+                            <td class="text-right" style="vertical-align: middle">＄580</td>
+                        </tr>
+                        <tr>
+                            <td class="text-right" colspan="3">運費</td>
+                            <td class="text-right font-weight-bold" colspan="1">＄60</td>
+                        </tr>
+                        <tr class="border-bottom">
+                            <td class="text-right" colspan="3">合計</td>
+                            <td class="text-right font-weight-bold" colspan="">＄640</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4 class="text-center mb-0 py-3">個人資料</h4>
+
+                <table class="table mt-3">
+                    <tbody>
+                        <tr>
+                            <th scope="row">E-mail</th>
+                            <td>james840525@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">姓名</th>
+                            <td>James HE</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">電話</th>
+                            <td>0989***431</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">地址</th>
+                            <td>台北市內湖區</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="py-5 bg-light">
+        <div class="d-flex justify-content-center">
+            <p>© Copright 2017 六角血拼賣賣</p>
+            <a class="ml-3" style="text-decoration-line: none" href="https://www.instagram.com/ho_zong/">Instagrame</a>
+            <a class="ml-2" style="text-decoration-line: none" href="https://www.facebook.com/profile.php?id=100000183751721">Facebook</a>
+            <a class="ml-2" style="text-decoration-line: none" href="#">About</a>
+        </div>
+        <div class="text-secondary text-center">
+            <p>Made with Bootstrap4</p>
+        </div>
+    </footer>
+    
+
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>是否確認刪除訂單</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">否</button>
+                    <button type="button" class="btn btn-outline-danger px-5">是</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#deleteModal').on('show.bs.modal', function (event) {
+                var btn = $(event.relatedTarget);
+                var title = btn.data('title');
+
+                var modal = $(this);
+                modal.find('.modal-title').text(title);
+            })
+        });
+    </script>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
